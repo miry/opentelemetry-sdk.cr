@@ -23,7 +23,8 @@ dependencies:
   time-ext:
     github: wyhaines/time-ext.cr
   protobuf:
-    github: jeromegn/protobuf.cr
+    github: miry/protobuf.cr
+    branch: master
   retriable:
     github: Sija/retriable.cr
   debug:
