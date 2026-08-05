@@ -17,7 +17,8 @@ dependencies:
   splay_tree_map:
     github: wyhaines/splay_tree_map.cr
   nbchannel:
-    github: wyhaines/nbchannel.cr
+    github: miry/nbchannel.cr
+    branch: master
   csuuid:
     github: wyhaines/csuuid.cr
   time-ext:

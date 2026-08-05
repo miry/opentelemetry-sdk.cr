@@ -40,6 +40,22 @@ https://discord.gg/WKe9WWJ3HE
 
 2. Run `shards install`
 
+   > **Note:** the `opentelemetry-api` shard transitively depends on the
+   > upstream `nbchannel` shard, which this SDK replaces with a fixed fork
+   > (`miry/nbchannel.cr`) to support the latest Crystal. `shard.override.yml`
+   > is not transitive, so consumer applications must add the same override:
+   >
+   > ```yaml
+   > # shard.override.yml
+   > dependencies:
+   >   nbchannel:
+   >     github: miry/nbchannel.cr
+   >     branch: master
+   > ```
+   >
+   > Otherwise `shards install` will fail with *"shard name (nbchannel) has
+   > ambiguous sources"*.
+
 ## Usage
 
 ```crystal

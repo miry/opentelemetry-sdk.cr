@@ -35,7 +35,9 @@ module OpenTelemetry
         @buffer.send element
       end
 
-      abstract def start
+      def start
+        spawn loop_and_receive
+      end
 
       def reaped?
         if @reaped || @reap_semaphore.receive?

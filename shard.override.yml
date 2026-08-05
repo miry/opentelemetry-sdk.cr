@@ -1,0 +1,4 @@
+dependencies:
+  nbchannel:
+    github: miry/nbchannel.cr
+    branch: master
