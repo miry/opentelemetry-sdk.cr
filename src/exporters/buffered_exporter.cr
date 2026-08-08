@@ -47,7 +47,7 @@ module OpenTelemetry
           end
 
           break if reaped?
-          sleep(Time::Span.new(nanoseconds: 1))
+          sleep(@batch_interval.seconds)
         end
       end
     end
